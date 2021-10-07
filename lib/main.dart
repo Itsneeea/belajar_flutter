@@ -18,15 +18,23 @@ class MyApp extends StatelessWidget {
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
-        title: Text(
-          'Belajar Flutter',
-          style: TextStyle(color: Colors.blue),
+        appBar: AppBar(
+          backgroundColor: Colors.deepPurple,
+          title: Text(
+            'Belajar Flutter',
+            style: TextStyle(color: Colors.blue),
+          ),
+          actions: [Icon(Icons.account_circle)],
+          centerTitle: true,
         ),
-        actions: [Icon(Icons.account_circle)],
-        centerTitle: true,
-      ),
-    );
+        body: Container(
+          color: Colors.blue,
+          margin: EdgeInsets.fromLTRB(30, 30, 0, 0),
+          child: Icon(
+            Icons.home,
+            color: Colors.red,
+            size: 100.78,
+          ),
+        ));
   }
 }
